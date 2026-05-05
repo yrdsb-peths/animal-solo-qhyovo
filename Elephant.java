@@ -23,7 +23,12 @@ public class Elephant extends Actor
         setImage(idle[0]);
     }
 
-    
+    int imageIndex = 0;
+    public void animateElephant()
+    {
+        setImage(idle[imageIndex]);
+        imageIndex = (imageIndex + 1) % idle.length;
+    }
     
     public void act()
     {
@@ -39,6 +44,8 @@ public class Elephant extends Actor
         }   
         
         eat();
+        
+        animateElephant();
     }
     
     public void eat()
