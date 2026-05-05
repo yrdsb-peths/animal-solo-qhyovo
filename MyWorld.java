@@ -9,5 +9,16 @@ public class MyWorld extends World {
         
         Apple apple = new Apple();
         addObject(apple, 300, 0);
+        
+        
+        creatApple();
+    }
+    
+    public void creatApple()
+    {
+        Apple apple = new Apple();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(apple, x, y);
     }
 }
