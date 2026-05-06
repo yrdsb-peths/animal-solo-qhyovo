@@ -40,18 +40,15 @@ public class TitleScreen extends World
     {
         Elephant elephant = new Elephant();
         addObject(elephant,502,105);
-        Label label = new Label("Use \u2190 and \u2192 to Move", 12);
-        addObject(label,209,268);
-        label.setLocation(200,268);
-        label.setLocation(220,264);
-        removeObject(label);
-        Label label4 = new Label("Use <-- and --> to Move", 50);
-        addObject(label4,304,255);
-        label.setLocation(344,235);
-        Label label2 = new Label("Press <space> to start", 50);
-        addObject(label2,326,330);
-        label2.setLocation(324,308);
-        label.setLocation(310,233);
-        label2.setLocation(292,306);
+        Label label = new Label("Use \u2190 and \u2192 to Move", 40);
+        addObject(label,284,278);
+        label.setLocation(294,206);
+        Label label2 = new Label("Press <space> to start", 40);
+        addObject(label2,276,279);
+        label2.setLocation(312,282);
+        label.setLocation(301,224);
+        label2.setLocation(264,307);
+        elephant.setLocation(513,190);
+        label.setLocation(245,264);
     }
 }
